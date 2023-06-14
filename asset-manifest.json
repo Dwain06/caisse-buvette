@@ -1,0 +1,13 @@
+{
+  "files": {
+    "main.css": "/caisse-buvette/static/css/main.ff4a6a72.css",
+    "main.js": "/caisse-buvette/static/js/main.fda185a8.js",
+    "index.html": "/caisse-buvette/index.html",
+    "main.ff4a6a72.css.map": "/caisse-buvette/static/css/main.ff4a6a72.css.map",
+    "main.fda185a8.js.map": "/caisse-buvette/static/js/main.fda185a8.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.ff4a6a72.css",
+    "static/js/main.fda185a8.js"
+  ]
+}
