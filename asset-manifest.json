@@ -1,10 +1,10 @@
 {
   "files": {
-    "main.css": "/static/css/main.78d15bb9.css",
-    "main.js": "/static/js/main.6a2ff3b8.js",
-    "index.html": "/index.html",
-    "main.78d15bb9.css.map": "/static/css/main.78d15bb9.css.map",
-    "main.6a2ff3b8.js.map": "/static/js/main.6a2ff3b8.js.map"
+    "main.css": "/caisse-buvette/static/css/main.78d15bb9.css",
+    "main.js": "/caisse-buvette/static/js/main.6a2ff3b8.js",
+    "index.html": "/caisse-buvette/index.html",
+    "main.78d15bb9.css.map": "/caisse-buvette/static/css/main.78d15bb9.css.map",
+    "main.6a2ff3b8.js.map": "/caisse-buvette/static/js/main.6a2ff3b8.js.map"
   },
   "entrypoints": [
     "static/css/main.78d15bb9.css",
