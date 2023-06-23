@@ -1,23 +1,36 @@
-import logo from './logo.svg';
-import './App.css';
+import { useEffect } from "react";
+import Drinks from "./components/drinks/Drinks";
+import Bill from "./components/bill/Bill";
+import { useDispatch, useSelector } from "react-redux";
+import { setDrinks } from "./feature/drinksSlice";
 
 function App() {
+
+  const drinks = useSelector((state) => state.drinksData.drinksData);
+  const dispatch = useDispatch();
+
+  useEffect(() => {
+
+    if (localStorage.getItem("drinksLocalStorage")) {
+      const drinksLocalStorage = JSON.parse(localStorage.getItem("drinksLocalStorage"));
+      dispatch(setDrinks(drinksLocalStorage));
+    } else console.log("pas de liste");
+    
+  }, []);
+
+  useEffect(() => {
+
+    if (drinks.length > 0) localStorage.setItem("drinksLocalStorage", JSON.stringify(drinks));
+    console.log(drinks)
+
+  }, [drinks]);
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div className="main">
+      <div className="main-container">
+        <Drinks />
+        <Bill />
+      </div>
     </div>
   );
 }

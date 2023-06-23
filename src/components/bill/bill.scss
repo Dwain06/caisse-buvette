@@ -1,0 +1,112 @@
+:root {
+    --white: #fff;
+    --darkblue: #007bff;
+    --lightblue: #d0e0e7;
+  }
+
+.bill {
+    position: fixed;
+    background: #f2f3f5;
+    width: 100%;
+    // max-width: 365px;
+    border-radius: 4px;
+    bottom: 0;
+
+    .table-wrapper {
+        text-align: left;
+    }
+
+    .table-wrapper table {
+        border-collapse: collapse;
+        width: 100%;
+        height: 150px;
+    }
+
+    .table-wrapper::-webkit-scrollbar {
+        height: 8px;
+    }
+
+    .table-wrapper::-webkit-scrollbar-thumb {
+        background: var(--darkblue);
+        border-radius: 40px;
+    }
+
+    .table-wrapper::-webkit-scrollbar-track {
+        background: var(--white);
+        border-radius: 40px;
+    }
+
+    .table-wrapper table th,
+    .table-wrapper table td {
+        padding: 6px;
+        font-size: 14px;
+    }
+
+    .table-wrapper table th {
+        color: var(--white);
+        background: var(--darkblue);
+    }
+
+    .table-wrapper table tbody tr:nth-of-type(even) > * {
+        background: var(--lightblue);
+    }
+
+    .table-wrapper table td:first-child {
+        width: 30px;
+    }
+    .table-wrapper table td:nth-child(2) {
+        min-width: 130px;
+    }
+
+    .table-wrapper_quantity {
+        width: 30px;
+    }
+
+    .table-wrapper_drink {
+        min-width: 150px;
+    }
+
+    thead, tbody tr {
+        display: table;
+        width: 100%;
+    }
+
+    tbody {
+        display: block;
+        max-height: 120px;
+        overflow-y: scroll;
+    }
+
+    .bill_total{
+        box-sizing: border-box;
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+        background: var(--darkblue);
+        color: white;
+        font-weight: 700;
+        font-size: 18px;
+        padding: 10px 20px;
+    }
+
+    .delete-row {
+        text-align: center;
+    }
+
+    .delete-btn {
+        cursor: pointer;
+        background: #dc3545;
+        color: white;
+        height: 22px;
+        width: 22px;
+        border: none;
+        font-weight: 700;
+        box-shadow: 1px 1px 2px rgb(63, 63, 63);
+        transition: .1s;
+
+        &:active {
+            box-shadow: -1px -1px 2px rgb(63, 63, 63);
+            transition: .1s;
+        }
+    }
+}

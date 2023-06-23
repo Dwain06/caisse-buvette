@@ -1,0 +1,20 @@
+.main-selection {
+    min-width: 250px;
+    max-width: 1000px;
+    max-height: calc(100vh - 225px);
+    overflow-y: auto;
+    padding: 10px;
+
+    h1{
+        font-size: 1.5rem;
+        margin-bottom: 15px;
+        color: rgb(75, 75, 75);
+    }
+
+    .drinks-container {
+        margin-bottom: 15px;
+        display: flex;
+        flex-wrap: wrap;
+        gap: 20px;
+    }
+}
